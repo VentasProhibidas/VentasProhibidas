@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENTAS PROHIBIDAS - El Lado Oscuro del Cierre</title>
+    <style>
+        /* === ESTILOS GLOBALES === */
+        :root {
+            --rojo-sangre: #ff0000;
+            --negro-profundo: #000;
+            --gris-batalla: #222;
+        }
+        
+        body {
+            background-color: var(--negro-profundo);
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="%23333" stroke-width="1"/></svg>');
+        }
+
+        /* === HERO SECTION - ZONA DE GUERRA === */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80');
+            background-size: cover;
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom: 3px solid var(--rojo-sangre);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "?? ACCESO MONITOREADO ??";
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 12px;
+            color: var(--rojo-sangre);
+            animation: parpadeo 1.5s infinite;
+        }
+
+        @keyframes parpadeo {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px var(--rojo-sangre);
+        }
+
+        .btn-nuclear {
+            display: inline-block;
+            background: linear-gradient(45deg, #8b0000, var(--rojo-sangre));
+            color: white !important;
+            padding: 15px 35px;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 2px solid #000;
+            border-radius: 0;
+            text-shadow: 0 0 5px rgba(0,0,0,0.7);
+            box-shadow: 0 0 15px rgba(255,0,0,0.7);
+            transition: all 0.3s ease;
+            margin-top: 30px;
+            letter-spacing: 2px;
+            font-size: 1.2rem;
+        }
+
+        .btn-nuclear:hover {
+            background: linear-gradient(45deg, var(--rojo-sangre), #8b0000);
+            transform: scale(1.05);
+            box-shadow: 0 0 25px var(--rojo-sangre);
+        }
+
+        /* === LEAD MAGNET - LA CARNADA === */
+        #lead-magnet {
+            border: 3px solid var(--rojo-sangre);
+            padding: 30px;
+            background-color: var(--gris-batalla);
+            max-width: 700px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        #lead-magnet::before {
+            content: "TOP SECRET";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--negro-profundo);
+            color: var(--rojo-sangre);
+            padding: 5px 15px;
+            font-size: 0.9rem;
+            letter-spacing: 3px;
+        }
+
+        #lead-magnet h3 {
+            color: var(--rojo-sangre);
+            text-align: center;
+            font-size: 1.8rem;
+            margin-top: 0;
+            border-bottom: 1px solid #444;
+            padding-bottom: 15px;
+        }
+
+        #lead-magnet ul {
+            padding-left: 20px;
+            margin: 25px 0;
+        }
+
+        #lead-magnet ul li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        #lead-magnet ul li::before {
+            content: "??";
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        #lead-magnet form {
+            display: grid;
+            gap: 15px;
+        }
+
+        #lead-magnet input {
+            padding: 14px;
+            background: #111;
+            color: white;
+            border: 1px solid #444;
+            font-family: 'Courier New', monospace;
+        }
+
+        #lead-magnet button {
+            background: var(--rojo-sangre);
+            color: white;
+            padding: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s;
+        }
+
+        #lead-magnet button:hover {
+            background: #8b0000;
+        }
+
+        /* === MENÚ UNDERWORLD === */
+        .menu-underworld {
+            background: #111;
+            padding: 15px 0;
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .nav-link:hover {
+            color: var(--rojo-sangre);
+            border: 1px solid #444;
+        }
+
+        /* === PLANTILLA POSTS - ARSENAL === */
+        .post-template {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .post-title {
+            color: var(--rojo-sangre);
+            border-left: 5px solid var(--rojo-sangre);
+            padding-left: 15px;
+            margin-top: 0;
+        }
+
+        .monetizar-box {
+            border: 2px solid var(--rojo-sangre);
+            padding: 25px;
+            background: #1a1a1a;
+            margin: 40px 0;
+            position: relative;
+        }
+
+        .monetizar-box::before {
+            content: "?? OFERTA RELÁMPAGO";
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: var(--negro-profundo);
+            color: var(--rojo-sangre);
+            padding: 0 10px;
+            font-size: 0.8rem;
+        }
+
+        .gumroad-btn {
+            display: inline-block;
+            background: #000;
+            color: var(--rojo-sangre);
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #444;
+            margin-top: 15px;
+            transition: all 0.3s;
+        }
+
+        .gumroad-btn:hover {
+            background: #111;
+            border-color: var(--rojo-sangre);
+        }
+
+        /* === FOOTER - ZONA DE PELIGRO === */
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+            border-top: 3px solid var(--rojo-sangre);
+        }
+
+        .footer-warning {
+            max-width: 600px;
+            margin: 0 auto 25px;
+            padding: 15px;
+            background: #111;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- MENÚ UNDERWORLD -->
+    <div class="menu-underworld">
+        <div class="nav-container">
+            <a href="#" class="nav-link">INICIO (LLAMAS)</a>
+            <a href="#" class="nav-link">ARSENAL (BLOG)</a>
+            <a href="#" class="nav-link">MISIÓN IMPOSIBLE (CASOS)</a>
+            <a href="#" class="nav-link">ZONA NEGRA (PRODUCTOS)</a>
+            <a href="#" class="nav-link">TRAICIONAR AL SISTEMA (CONTACTO)</a>
+        </div>
+    </div>
+
+    <!-- HERO SECTION - ZONA DE GUERRA -->
+    <section class="hero">
+        <h1>?? ACCESO RESTRINGIDO: TÁCTICAS DE VENTAS QUE TU JEFE QUEMA EN SECRETO</h1>
+        <p>43 ejecutivos fueron despedidos por leer esto. ¿Eres el siguiente?</p>
+        <a href="#lead-magnet" class="btn-nuclear">QUIERO EL PODER PROHIBIDO ?</a>
+    </section>
+
+    <!-- LEAD MAGNET - LA CARNADA -->
+    <section id="lead-magnet">
+        <h3>?? DESCARGAR: <strong>"El Manual del Vendedor Descarado"</strong></h3>
+        <p>Incluye:</p>
+        <ul>
+            <li>3 scripts de voz para humillar objeciones</li>
+            <li>Plantilla "Black Mail": Email que obliga a responder</li>
+            <li>Lista de herramientas con enlaces de afiliado (50% comisión)</li>
+        </ul>
+        <form action="#" method="POST">
+            <input type="email" placeholder="Email (para enviarte lo legal)" required>
+            <input type="tel" placeholder="WhatsApp (para enviarte lo prohibido)" required>
+            <button type="submit">¡QUIERO SER ILEGAL!</button>
+        </form>
+        <p style="text-align:center;margin-top:20px;font-size:0.8em;">
+            <small>?? 97% de los "vendedores éticos" abandonan aquí</small>
+        </p>
+    </section>
+
+    <!-- EJEMPLO DE POST VIRAL -->
+    <section class="post-template">
+        <h2 class="post-title">?? COCA-COLA BORRÓ MI POST: Cómo vendí agua embotellada en el desierto con una mentira épica</h2>
+        
+        <p><strong>Confesión:</strong> Usé el método "Espejo Oscuro" para reflejar sus miedos más profundos...</p>
+        
+        <p>Aquí el guión exacto que usé:</p>
+        <pre style="background:#111;padding:15px;border-left:3px solid var(--rojo-sangre);">
+"¿Crees que el agua es solo hidratación? 
+Error. Es poder líquido. 
+Lo que bebes hoy determina quién gobernará mañana. 
+
+Tu competidor ya lo sabe. 
+¿Sigues vendiendo agua... o estás construyendo un imperio?"</pre>
+        
+        <div class="monetizar-box">
+            <p>¿Quieres el método completo con 9 variantes letales?</p>
+            <a href="https://gumroad.com/ventasprohibidas" class="gumroad-btn">OBTENER AHORA ($7)</a>
+            <p style="margin-top:15px;"><strong>O GÁNATELO:</strong> Resuelve este acertijo y recíbelo gratis por WhatsApp:</p>
+            <p style="font-style:italic;background:#000;padding:10px;display:inline-block;">
+                ? "Se bebe pero no se ve, se vende pero no se compra. (Respuesta: <em>control</em>)
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER - ZONA DE PELIGRO -->
+    <footer>
+        <div class="footer-warning">
+            ?? ADVERTENCIA: Este sitio está en la lista de vigilancia corporativa. Descarga todo el contenido antes de que sea borrado.
+        </div>
+        <a href="#lead-magnet" class="btn-nuclear">DESCARGA EL MANUAL ANTES QUE LO CENSUREN</a>
+        <p style="margin-top:30px;color:#777;font-size:0.9em;">
+            © 2025 VENTAS PROHIBIDAS - Operación Black Swan | Este sitio no existe
+        </p>
+    </footer>
+
+    <!-- SCRIPT DE URGENCIA -->
+    <script>
+        // Contador de autodestrucción
+        document.addEventListener('DOMContentLoaded', function() {
+            const countdownElement = document.createElement('div');
+            countdownElement.style.position = 'fixed';
+            countdownElement.style.bottom = '10px';
+            countdownElement.style.left = '10px';
+            countdownElement.style.backgroundColor = 'black';
+            countdownElement.style.color = 'red';
+            countdownElement.style.padding = '5px 10px';
+            countdownElement.style.fontFamily = "'Courier New', monospace";
+            countdownElement.style.zIndex = '1000';
+            countdownElement.style.border = '1px solid red';
+            countdownElement.innerHTML = '?? OFERTA TERMINA EN: <span id="countdown">15:00</span>';
+            document.body.appendChild(countdownElement);
+            
+            let timeLeft = 15 * 60; // 15 minutos
+            const countdown = setInterval(() => {
+                timeLeft--;
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                document.getElementById('countdown').textContent = 
+                    `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                if(timeLeft <= 0) {
+                    clearInterval(countdown);
+                    countdownElement.innerHTML = '?? OFERTA AGOTADA';
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
