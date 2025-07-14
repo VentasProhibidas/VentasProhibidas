@@ -1,14 +1,4 @@
-## Hi there 👋
-
-<!--
-**VentasProhibidas/VentasProhibidas** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...[Uploading index.ht<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -44,7 +34,7 @@ Here are some ideas to get you started:
         }
 
         .hero::after {
-            content: "?? ACCESO MONITOREADO ??";
+            content: "⚠️ ACCESO MONITOREADO ⚠️";
             position: absolute;
             bottom: 10px;
             right: 10px;
@@ -134,7 +124,7 @@ Here are some ideas to get you started:
         }
 
         #lead-magnet ul li::before {
-            content: "??";
+            content: "☠️";
             position: absolute;
             left: 0;
             top: -2px;
@@ -169,7 +159,7 @@ Here are some ideas to get you started:
             background: #8b0000;
         }
 
-        /* === MEN� UNDERWORLD === */
+        /* === MENÚ UNDERWORLD === */
         .menu-underworld {
             background: #111;
             padding: 15px 0;
@@ -227,7 +217,7 @@ Here are some ideas to get you started:
         }
 
         .monetizar-box::before {
-            content: "?? OFERTA REL�MPAGO";
+            content: "💰 OFERTA RELÁMPAGO";
             position: absolute;
             top: -12px;
             left: 20px;
@@ -273,12 +263,12 @@ Here are some ideas to get you started:
     </style>
 </head>
 <body>
-    <!-- MEN� UNDERWORLD -->
+    <!-- MENÚ UNDERWORLD -->
     <div class="menu-underworld">
         <div class="nav-container">
             <a href="#" class="nav-link">INICIO (LLAMAS)</a>
             <a href="#" class="nav-link">ARSENAL (BLOG)</a>
-            <a href="#" class="nav-link">MISI�N IMPOSIBLE (CASOS)</a>
+            <a href="#" class="nav-link">MISIÓN IMPOSIBLE (CASOS)</a>
             <a href="#" class="nav-link">ZONA NEGRA (PRODUCTOS)</a>
             <a href="#" class="nav-link">TRAICIONAR AL SISTEMA (CONTACTO)</a>
         </div>
@@ -286,51 +276,51 @@ Here are some ideas to get you started:
 
     <!-- HERO SECTION - ZONA DE GUERRA -->
     <section class="hero">
-        <h1>?? ACCESO RESTRINGIDO: T�CTICAS DE VENTAS QUE TU JEFE QUEMA EN SECRETO</h1>
-        <p>43 ejecutivos fueron despedidos por leer esto. �Eres el siguiente?</p>
-        <a href="#lead-magnet" class="btn-nuclear">QUIERO EL PODER PROHIBIDO ?</a>
+        <h1>⚠️ ACCESO RESTRINGIDO: TÁCTICAS DE VENTAS QUE TU JEFE QUEMA EN SECRETO</h1>
+        <p>43 ejecutivos fueron despedidos por leer esto. ¿Eres el siguiente?</p>
+        <a href="#lead-magnet" class="btn-nuclear">QUIERO EL PODER PROHIBIDO →</a>
     </section>
 
     <!-- LEAD MAGNET - LA CARNADA -->
     <section id="lead-magnet">
-        <h3>?? DESCARGAR: <strong>"El Manual del Vendedor Descarado"</strong></h3>
+        <h3>🔓 DESCARGAR: <strong>"El Manual del Vendedor Descarado"</strong></h3>
         <p>Incluye:</p>
         <ul>
             <li>3 scripts de voz para humillar objeciones</li>
             <li>Plantilla "Black Mail": Email que obliga a responder</li>
-            <li>Lista de herramientas con enlaces de afiliado (50% comisi�n)</li>
+            <li>Lista de herramientas con enlaces de afiliado (50% comisión)</li>
         </ul>
         <form action="#" method="POST">
             <input type="email" placeholder="Email (para enviarte lo legal)" required>
             <input type="tel" placeholder="WhatsApp (para enviarte lo prohibido)" required>
-            <button type="submit">�QUIERO SER ILEGAL!</button>
+            <button type="submit">¡QUIERO SER ILEGAL!</button>
         </form>
         <p style="text-align:center;margin-top:20px;font-size:0.8em;">
-            <small>?? 97% de los "vendedores �ticos" abandonan aqu�</small>
+            <small>⚠️ 97% de los "vendedores éticos" abandonan aquí</small>
         </p>
     </section>
 
     <!-- EJEMPLO DE POST VIRAL -->
     <section class="post-template">
-        <h2 class="post-title">?? COCA-COLA BORR� MI POST: C�mo vend� agua embotellada en el desierto con una mentira �pica</h2>
+        <h2 class="post-title">🚫 COCA-COLA BORRÓ MI POST: Cómo vendí agua embotellada en el desierto con una mentira épica</h2>
         
-        <p><strong>Confesi�n:</strong> Us� el m�todo "Espejo Oscuro" para reflejar sus miedos m�s profundos...</p>
+        <p><strong>Confesión:</strong> Usé el método "Espejo Oscuro" para reflejar sus miedos más profundos...</p>
         
-        <p>Aqu� el gui�n exacto que us�:</p>
+        <p>Aquí el guión exacto que usé:</p>
         <pre style="background:#111;padding:15px;border-left:3px solid var(--rojo-sangre);">
-"�Crees que el agua es solo hidrataci�n? 
-Error. Es poder l�quido. 
-Lo que bebes hoy determina qui�n gobernar� ma�ana. 
+"¿Crees que el agua es solo hidratación? 
+Error. Es poder líquido. 
+Lo que bebes hoy determina quién gobernará mañana. 
 
 Tu competidor ya lo sabe. 
-�Sigues vendiendo agua... o est�s construyendo un imperio?"</pre>
+¿Sigues vendiendo agua... o estás construyendo un imperio?"</pre>
         
         <div class="monetizar-box">
-            <p>�Quieres el m�todo completo con 9 variantes letales?</p>
+            <p>¿Quieres el método completo con 9 variantes letales?</p>
             <a href="https://gumroad.com/ventasprohibidas" class="gumroad-btn">OBTENER AHORA ($7)</a>
-            <p style="margin-top:15px;"><strong>O G�NATELO:</strong> Resuelve este acertijo y rec�belo gratis por WhatsApp:</p>
+            <p style="margin-top:15px;"><strong>O GÁNATELO:</strong> Resuelve este acertijo y recíbelo gratis por WhatsApp:</p>
             <p style="font-style:italic;background:#000;padding:10px;display:inline-block;">
-                ? "Se bebe pero no se ve, se vende pero no se compra. (Respuesta: <em>control</em>)
+                ❓ "Se bebe pero no se ve, se vende pero no se compra. (Respuesta: <em>control</em>)
             </p>
         </div>
     </section>
@@ -338,17 +328,17 @@ Tu competidor ya lo sabe.
     <!-- FOOTER - ZONA DE PELIGRO -->
     <footer>
         <div class="footer-warning">
-            ?? ADVERTENCIA: Este sitio est� en la lista de vigilancia corporativa. Descarga todo el contenido antes de que sea borrado.
+            ⚠️ ADVERTENCIA: Este sitio está en la lista de vigilancia corporativa. Descarga todo el contenido antes de que sea borrado.
         </div>
         <a href="#lead-magnet" class="btn-nuclear">DESCARGA EL MANUAL ANTES QUE LO CENSUREN</a>
         <p style="margin-top:30px;color:#777;font-size:0.9em;">
-            � 2025 VENTAS PROHIBIDAS - Operaci�n Black Swan | Este sitio no existe
+            © 2025 VENTAS PROHIBIDAS - Operación Black Swan | Este sitio no existe
         </p>
     </footer>
 
     <!-- SCRIPT DE URGENCIA -->
     <script>
-        // Contador de autodestrucci�n
+        // Contador de autodestrucción
         document.addEventListener('DOMContentLoaded', function() {
             const countdownElement = document.createElement('div');
             countdownElement.style.position = 'fixed';
@@ -360,7 +350,7 @@ Tu competidor ya lo sabe.
             countdownElement.style.fontFamily = "'Courier New', monospace";
             countdownElement.style.zIndex = '1000';
             countdownElement.style.border = '1px solid red';
-            countdownElement.innerHTML = '?? OFERTA TERMINA EN: <span id="countdown">15:00</span>';
+            countdownElement.innerHTML = '🚨 OFERTA TERMINA EN: <span id="countdown">15:00</span>';
             document.body.appendChild(countdownElement);
             
             let timeLeft = 15 * 60; // 15 minutos
@@ -373,16 +363,10 @@ Tu competidor ya lo sabe.
                 
                 if(timeLeft <= 0) {
                     clearInterval(countdown);
-                    countdownElement.innerHTML = '?? OFERTA AGOTADA';
+                    countdownElement.innerHTML = '🔥 OFERTA AGOTADA';
                 }
             }, 1000);
         });
     </script>
 </body>
-</html>ml…]()
-
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+</html>
